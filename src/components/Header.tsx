@@ -19,7 +19,7 @@ const Header = () => {
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-primary">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-background border-b border-border">
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           {/* Left nav items - desktop */}
@@ -28,7 +28,7 @@ const Header = () => {
               <button
                 key={item.href}
                 onClick={() => handleNavClick(item.href)}
-                className="text-primary-foreground font-medium hover:opacity-80 transition-opacity text-sm uppercase tracking-wide"
+                className="text-foreground font-medium hover:text-accent transition-colors text-sm uppercase tracking-wide"
               >
                 {item.label}
               </button>
@@ -43,9 +43,9 @@ const Header = () => {
             <img 
               src={logo} 
               alt="Eurasia Sportakademie" 
-              className="h-12 md:h-16 brightness-0 invert"
+              className="h-12 md:h-16"
             />
-            <span className="text-primary-foreground text-[10px] md:text-xs tracking-[0.2em] uppercase mt-1">
+            <span className="text-foreground text-[10px] md:text-xs tracking-[0.2em] uppercase mt-1">
               Sport & Philosophy Center
             </span>
           </button>
@@ -56,7 +56,7 @@ const Header = () => {
               <button
                 key={item.href}
                 onClick={() => handleNavClick(item.href)}
-                className="text-primary-foreground font-medium hover:opacity-80 transition-opacity text-sm uppercase tracking-wide"
+                className="text-foreground font-medium hover:text-accent transition-colors text-sm uppercase tracking-wide"
               >
                 {item.label}
               </button>
@@ -65,7 +65,7 @@ const Header = () => {
 
           {/* Mobile menu button */}
           <button
-            className="md:hidden text-primary-foreground p-2"
+            className="md:hidden text-foreground p-2"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             aria-label="Toggle menu"
           >
@@ -80,7 +80,7 @@ const Header = () => {
               <button
                 key={item.href}
                 onClick={() => handleNavClick(item.href)}
-                className="text-primary-foreground font-medium hover:opacity-80 transition-opacity text-sm uppercase tracking-wide text-left"
+                className="text-foreground font-medium hover:text-accent transition-colors text-sm uppercase tracking-wide text-left"
               >
                 {item.label}
               </button>

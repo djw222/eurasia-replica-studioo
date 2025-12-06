@@ -25,27 +25,27 @@ const TrainingszeitenSection = () => {
     <section
       id="trainingszeiten"
       ref={sectionRef}
-      className="min-h-screen bg-primary py-20 md:py-32"
+      className="min-h-screen bg-background py-20 md:py-32"
     >
       <div className="container mx-auto px-4">
         <div className={`text-center mb-16 ${isVisible ? 'animate-fade-up' : 'opacity-0'}`}>
           <h2 className="font-display text-4xl md:text-5xl lg:text-7xl text-foreground italic uppercase mb-4">
             Aktuelle
             <br />
-            Trainingszeiten
+            <span className="text-accent">Trainingszeiten</span>
           </h2>
         </div>
 
         {/* Placeholder for schedule */}
         <div 
-          className={`bg-card/10 backdrop-blur border border-foreground/20 rounded-2xl p-8 md:p-12 min-h-[400px] flex items-center justify-center ${isVisible ? 'animate-fade-up' : 'opacity-0'}`}
+          className={`bg-card border border-border rounded-2xl p-8 md:p-12 min-h-[400px] flex items-center justify-center ${isVisible ? 'animate-fade-up' : 'opacity-0'}`}
           style={{ animationDelay: '0.2s' }}
         >
           <div className="text-center">
-            <p className="text-foreground/70 text-lg uppercase tracking-wide mb-4">
+            <p className="text-foreground text-lg uppercase tracking-wide mb-4">
               Trainingsplan kommt bald
             </p>
-            <p className="text-foreground/50 max-w-md">
+            <p className="text-muted-foreground max-w-md">
               Hier wird der vollständige Trainingsplan mit allen Zeiten und Sportarten angezeigt.
             </p>
           </div>
@@ -56,10 +56,10 @@ const TrainingszeitenSection = () => {
           className={`text-center mt-16 ${isVisible ? 'animate-fade-up' : 'opacity-0'}`}
           style={{ animationDelay: '0.4s' }}
         >
-          <p className="text-foreground uppercase tracking-wide font-semibold mb-4">
+          <p className="text-accent uppercase tracking-wide font-semibold mb-4">
             Du willst mitmachen?
           </p>
-          <p className="text-foreground/80 max-w-2xl mx-auto">
+          <p className="text-foreground max-w-2xl mx-auto">
             Wir bieten ein kostenloses Probetraining für jede von uns angebotene Sportart an. 
             Du musst dich nicht anmelden, sondern kannst einfach zu einer unserer Trainingszeiten vorbeikommen.
           </p>
