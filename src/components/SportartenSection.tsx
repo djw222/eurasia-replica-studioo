@@ -48,17 +48,17 @@ const SportartenSection = () => {
     <section
       id="sportarten"
       ref={sectionRef}
-      className="min-h-screen bg-primary py-20 md:py-32"
+      className="min-h-screen bg-foreground py-20 md:py-32"
     >
       <div className="container mx-auto px-4">
         <div className={`text-center mb-16 ${isVisible ? 'animate-fade-up' : 'opacity-0'}`}>
-          <h2 className="font-display text-3xl md:text-4xl lg:text-5xl text-foreground mb-6">
+          <h2 className="font-display text-3xl md:text-4xl lg:text-5xl text-background mb-6">
             Ein vielfältiges Angebot an Disziplinen für Körper und Geist
           </h2>
-          <p className="text-foreground/90 text-lg max-w-3xl mx-auto">
+          <p className="text-background/80 text-lg max-w-3xl mx-auto">
             Kraftvolles Taekwondo, technisch präzises Judo, dynamisches Boxtraining oder 
             harmonisierendes Yoga – unser Sportangebot fördert die{" "}
-            <span className="underline">körperliche und mentale Fitness</span> und ist 
+            <span className="underline text-accent">körperliche und mentale Fitness</span> und ist 
             so abwechslungsreich wie unsere Gemeinschaft.
           </p>
         </div>
@@ -74,18 +74,18 @@ const SportartenSection = () => {
             >
               <div className="flip-card-inner relative w-full h-full">
                 {/* Front */}
-                <div className="flip-card-front absolute inset-0 bg-card/10 backdrop-blur border border-foreground/20 rounded-xl flex items-center justify-center">
-                  <h3 className="font-display text-3xl md:text-4xl text-foreground italic uppercase">
+                <div className="flip-card-front absolute inset-0 bg-background/10 border border-background/30 rounded-xl flex items-center justify-center">
+                  <h3 className="font-display text-3xl md:text-4xl text-background italic uppercase">
                     {sport.name}
                   </h3>
                 </div>
                 {/* Back */}
-                <div className="flip-card-back absolute inset-0 bg-secondary rounded-xl flex items-center justify-center p-6">
+                <div className="flip-card-back absolute inset-0 bg-background rounded-xl flex items-center justify-center p-6">
                   <div className="text-center">
-                    <h3 className="font-display text-xl text-primary uppercase mb-4">
+                    <h3 className="font-display text-xl text-accent uppercase mb-4">
                       {sport.name}
                     </h3>
-                    <p className="text-secondary-foreground">
+                    <p className="text-foreground">
                       {sport.description}
                     </p>
                   </div>
@@ -96,14 +96,14 @@ const SportartenSection = () => {
 
           {/* CTA Card */}
           <div
-            className={`h-64 bg-secondary rounded-xl flex flex-col items-center justify-center p-6 text-center ${isVisible ? 'animate-fade-up' : 'opacity-0'}`}
+            className={`h-64 bg-accent rounded-xl flex flex-col items-center justify-center p-6 text-center ${isVisible ? 'animate-fade-up' : 'opacity-0'}`}
             style={{ animationDelay: '0.5s' }}
           >
-            <p className="text-primary uppercase text-sm tracking-wide font-semibold mb-2">
+            <p className="text-accent-foreground uppercase text-sm tracking-wide font-semibold mb-2">
               Trau dich!
             </p>
-            <div className="w-8 h-0.5 bg-primary mb-4"></div>
-            <p className="text-secondary-foreground">
+            <div className="w-8 h-0.5 bg-accent-foreground mb-4"></div>
+            <p className="text-accent-foreground">
               Du möchtest bei uns mitmachen? Dann komm einfach vorbei!
             </p>
           </div>

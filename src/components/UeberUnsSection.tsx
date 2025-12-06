@@ -26,7 +26,7 @@ const UeberUnsSection = () => {
     <section
       id="ueber-uns"
       ref={sectionRef}
-      className="min-h-screen bg-primary py-20 md:py-32"
+      className="min-h-screen bg-background py-20 md:py-32"
     >
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -36,22 +36,22 @@ const UeberUnsSection = () => {
               Herzlich Willkommen im Dojo Eurasia, dem Trainingszentrum für Kampfsport aus Berlin.
             </h2>
             
-            <p className="text-foreground/90 text-lg leading-relaxed">
+            <p className="text-foreground text-lg leading-relaxed">
               Unsere Kampfsportschule ist mehr als nur ein Ort des Trainings. Wir sind eine{" "}
-              <span className="underline font-semibold">engagierte Gemeinschaft</span>, die Vielfalt, 
+              <span className="underline font-semibold text-accent">engagierte Gemeinschaft</span>, die Vielfalt, 
               Inklusion und den gemeinsamen Weg zu körperlicher und mentaler Stärke schätzt.
             </p>
             
-            <p className="text-foreground/90 text-lg leading-relaxed">
+            <p className="text-foreground text-lg leading-relaxed">
               Hier inmitten des lebendigen Stadtteils Neukölln setzen wir uns aktiv{" "}
-              <span className="underline font-semibold">gegen Rassismus</span> ein und schaffen 
+              <span className="underline font-semibold text-accent">gegen Rassismus</span> ein und schaffen 
               einen Raum, in dem sich jeder willkommen fühlt und sein Potential frei entfalten kann.
             </p>
 
             <div className="flex flex-wrap gap-4 pt-4">
               <button 
                 onClick={() => document.querySelector('#impressum')?.scrollIntoView({ behavior: 'smooth' })}
-                className="inline-flex items-center gap-2 px-6 py-3 border-2 border-foreground text-foreground rounded-full font-medium hover:bg-foreground hover:text-primary transition-colors"
+                className="inline-flex items-center gap-2 px-6 py-3 border-2 border-foreground text-foreground rounded-full font-medium hover:bg-foreground hover:text-background transition-colors"
               >
                 ÜBER UNS <ChevronRight size={18} />
               </button>
@@ -63,7 +63,7 @@ const UeberUnsSection = () => {
 
           {/* Right content - Values */}
           <div className={`${isVisible ? 'animate-fade-up' : 'opacity-0'}`} style={{ animationDelay: '0.2s' }}>
-            <div className="bg-secondary rounded-2xl p-8 md:p-12">
+            <div className="bg-card border border-border rounded-2xl p-8 md:p-12">
               <p className="text-muted-foreground uppercase tracking-wide text-sm mb-4">
                 Wir stehen für
               </p>
@@ -71,7 +71,7 @@ const UeberUnsSection = () => {
                 <h3 className="font-display text-4xl md:text-5xl lg:text-6xl text-accent uppercase">
                   Gleichheit
                 </h3>
-                <h3 className="font-display text-4xl md:text-5xl lg:text-6xl text-primary uppercase">
+                <h3 className="font-display text-4xl md:text-5xl lg:text-6xl text-foreground uppercase">
                   Diversität
                 </h3>
                 <h3 className="font-display text-4xl md:text-5xl lg:text-6xl text-accent italic uppercase">
@@ -84,25 +84,25 @@ const UeberUnsSection = () => {
 
         {/* Pricing section */}
         <div className={`mt-20 ${isVisible ? 'animate-fade-up' : 'opacity-0'}`} style={{ animationDelay: '0.4s' }}>
-          <div className="bg-secondary/10 backdrop-blur rounded-2xl p-8 md:p-12 border border-foreground/20">
+          <div className="bg-card border border-border rounded-2xl p-8 md:p-12">
             <h3 className="font-display text-2xl md:text-3xl text-foreground mb-6 uppercase">
               Mitgliedschaft & Preise
             </h3>
             <div className="grid md:grid-cols-3 gap-8">
               <div className="text-center p-6">
-                <p className="text-foreground/70 uppercase text-sm mb-2">Kinder</p>
-                <p className="font-display text-3xl text-foreground">35€</p>
-                <p className="text-foreground/70 text-sm">pro Monat</p>
+                <p className="text-muted-foreground uppercase text-sm mb-2">Kinder</p>
+                <p className="font-display text-3xl text-accent">35€</p>
+                <p className="text-muted-foreground text-sm">pro Monat</p>
               </div>
-              <div className="text-center p-6 border-y md:border-y-0 md:border-x border-foreground/20">
-                <p className="text-foreground/70 uppercase text-sm mb-2">Jugendliche</p>
-                <p className="font-display text-3xl text-foreground">40€</p>
-                <p className="text-foreground/70 text-sm">pro Monat</p>
+              <div className="text-center p-6 border-y md:border-y-0 md:border-x border-border">
+                <p className="text-muted-foreground uppercase text-sm mb-2">Jugendliche</p>
+                <p className="font-display text-3xl text-accent">40€</p>
+                <p className="text-muted-foreground text-sm">pro Monat</p>
               </div>
               <div className="text-center p-6">
-                <p className="text-foreground/70 uppercase text-sm mb-2">Erwachsene</p>
-                <p className="font-display text-3xl text-foreground">50€</p>
-                <p className="text-foreground/70 text-sm">pro Monat</p>
+                <p className="text-muted-foreground uppercase text-sm mb-2">Erwachsene</p>
+                <p className="font-display text-3xl text-accent">50€</p>
+                <p className="text-muted-foreground text-sm">pro Monat</p>
               </div>
             </div>
           </div>

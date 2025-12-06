@@ -7,32 +7,32 @@
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 248 100% 50%;
+    --foreground: 0 0% 7%;
 
     --card: 0 0% 100%;
-    --card-foreground: 248 100% 50%;
+    --card-foreground: 0 0% 7%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 248 100% 50%;
+    --popover-foreground: 0 0% 7%;
 
-    --primary: 248 100% 50%;
+    --primary: 0 0% 7%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 0 0% 100%;
-    --secondary-foreground: 248 100% 50%;
+    --secondary: 0 0% 96%;
+    --secondary-foreground: 0 0% 7%;
 
-    --muted: 248 100% 95%;
-    --muted-foreground: 248 50% 40%;
+    --muted: 0 0% 90%;
+    --muted-foreground: 0 0% 40%;
 
-    --accent: 0 84% 60%;
+    --accent: 0 84% 50%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 248 50% 80%;
-    --input: 248 50% 80%;
-    --ring: 248 100% 50%;
+    --border: 0 0% 85%;
+    --input: 0 0% 85%;
+    --ring: 0 84% 50%;
 
     --radius: 0.5rem;
 
@@ -47,33 +47,33 @@
   }
 
   .dark {
-    --background: 248 100% 50%;
+    --background: 0 0% 7%;
     --foreground: 0 0% 100%;
 
-    --card: 248 100% 45%;
+    --card: 0 0% 12%;
     --card-foreground: 0 0% 100%;
 
-    --popover: 248 100% 45%;
+    --popover: 0 0% 12%;
     --popover-foreground: 0 0% 100%;
 
     --primary: 0 0% 100%;
-    --primary-foreground: 248 100% 50%;
+    --primary-foreground: 0 0% 7%;
 
-    --secondary: 248 100% 40%;
+    --secondary: 0 0% 15%;
     --secondary-foreground: 0 0% 100%;
 
-    --muted: 248 100% 40%;
-    --muted-foreground: 248 50% 80%;
+    --muted: 0 0% 20%;
+    --muted-foreground: 0 0% 70%;
 
-    --accent: 0 84% 60%;
+    --accent: 0 84% 50%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 248 80% 60%;
-    --input: 248 80% 60%;
-    --ring: 0 0% 100%;
+    --border: 0 0% 25%;
+    --input: 0 0% 25%;
+    --ring: 0 84% 50%;
     
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
