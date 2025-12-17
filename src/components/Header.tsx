@@ -35,7 +35,7 @@ const Header = () => {
 
           {/* Logo - center */}
           <button onClick={() => handleNavClick("#hero")} className="flex flex-col items-center">
-            <img src={eurasiaLogo} alt="Eurasia" className="h-8 md:h-10 object-contain" />
+            <img src={eurasiaLogo} alt="Eurasia" className="h-16 md:h-20 object-contain" />
             <span className="text-foreground text-[10px] md:text-xs tracking-[0.2em] uppercase mt-1">
               Sport & Philosophy Center
             </span>
