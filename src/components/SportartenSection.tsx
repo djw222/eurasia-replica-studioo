@@ -14,12 +14,12 @@ const sports = [
     description: "Japanische Wurf- und Bodenkampfkunst. Lehrt Respekt, Technik und die effiziente Nutzung von Kraft.",
   },
   {
-    name: "Yoga",
-    description: "Harmonisiert Körper und Geist. Verbessert Flexibilität, Kraft und innere Ruhe durch achtsame Bewegung.",
+    name: "Kickboxen",
+    description: "Dynamische Kombination aus Boxen und Tritttechniken. Steigert Ausdauer, Kraft und Selbstverteidigungsfähigkeiten.",
   },
   {
-    name: "Schach",
-    description: "Strategisches Denken und geistige Fitness. Trainiert Konzentration, Geduld und vorausschauendes Planen.",
+    name: "BJJ",
+    description: "Brazilian Jiu-Jitsu – Bodenkampfkunst mit Fokus auf Hebel und Würgetechniken. Effektive Selbstverteidigung für alle Größen.",
   },
 ];
 
