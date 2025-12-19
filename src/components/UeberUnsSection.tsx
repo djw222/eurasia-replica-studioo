@@ -74,7 +74,7 @@ const UeberUnsSection = () => {
                 <h3 className="font-display text-4xl md:text-5xl lg:text-6xl text-foreground uppercase">
                   Diversität
                 </h3>
-                <h3 className="font-display text-4xl md:text-5xl lg:text-6xl text-accent italic uppercase">
+                <h3 className="font-display text-4xl md:text-5xl lg:text-6xl text-accent uppercase">
                   Inklusion
                 </h3>
               </div>
