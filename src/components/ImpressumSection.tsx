@@ -31,7 +31,7 @@ const ImpressumSection = () => {
       <div className="container mx-auto px-4">
         {/* Impressum */}
         <div className={`mb-20 ${isVisible ? 'animate-fade-up' : 'opacity-0'}`}>
-          <h2 className="font-display text-4xl md:text-5xl text-background italic mb-8">
+          <h2 className="font-display text-4xl md:text-5xl text-background mb-8">
             Impressum
           </h2>
           

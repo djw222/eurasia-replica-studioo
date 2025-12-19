@@ -75,7 +75,7 @@ const SportartenSection = () => {
               <div className="flip-card-inner relative w-full h-full">
                 {/* Front */}
                 <div className="flip-card-front absolute inset-0 bg-background/10 border border-background/30 rounded-xl flex items-center justify-center">
-                  <h3 className="font-display text-3xl md:text-4xl text-background italic uppercase">
+                  <h3 className="font-display text-3xl md:text-4xl text-background uppercase">
                     {sport.name}
                   </h3>
                 </div>
