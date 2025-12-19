@@ -41,13 +41,20 @@ const ImpressumSection = () => {
             </p>
             
             <p>
-              Rollbergstraße 73,<br />
-              12053 Berlin-Neukölln
+              Rollbergstraße 73<br />
+              12053 Berlin Neukölln
             </p>
             
             <div className="space-y-2">
-              <p>Telefon: 01778460823</p>
-              <p>E-Mail: info@eurasia.de</p>
+              <p>Telefon : 01778460823</p>
+              <p>E-Mail : info@eurasia.de</p>
+            </div>
+            
+            <div className="pt-4 border-t border-background/20">
+              <p className="font-semibold mb-2">Berliner Sparkasse</p>
+              <p>Eurasia Sportakademie e.V.</p>
+              <p>DE15 1005 0000 0191 3729 27 BELADEBEXXX</p>
+              <p className="text-sm text-background/70 mt-2">Verwendungszweck: Rechnungsnummer</p>
             </div>
             
             <p className="text-sm text-background/70 max-w-3xl">
