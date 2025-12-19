@@ -32,7 +32,7 @@ const UeberUnsSection = () => {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Left content */}
           <div className={`space-y-6 ${isVisible ? 'animate-fade-up' : 'opacity-0'}`}>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground leading-tight">
+            <h2 className="font-display text-3xl md:text-4xl lg:text-5xl text-foreground leading-tight">
               Herzlich Willkommen im Dojo Eurasia, dem Trainingszentrum für Kampfsport aus Berlin.
             </h2>
             
