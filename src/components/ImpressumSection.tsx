@@ -53,8 +53,8 @@ const ImpressumSection = () => {
             <div className="pt-4 border-t border-background/20">
               <p className="font-semibold mb-2">Berliner Sparkasse</p>
               <p>Eurasia Sportakademie e.V.</p>
+              <p>DE15 1005 0000 0191 3729 27</p>
               <p>BELADEBEXXX</p>
-              <p className="text-sm text-background/70 mt-2">Verwendungszweck: Rechnungsnummer</p>
             </div>
             
             <p className="text-sm text-background/70 max-w-3xl">
