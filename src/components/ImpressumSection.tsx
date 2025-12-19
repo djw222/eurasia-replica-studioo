@@ -68,7 +68,7 @@ const ImpressumSection = () => {
         {/* Location */}
         <div className={`${isVisible ? 'animate-fade-up' : 'opacity-0'}`} style={{ animationDelay: '0.2s' }}>
           <h3 className="font-display text-3xl md:text-4xl text-background mb-8">
-            Unser Standort in Berlin-Neukölln
+            Unser Standort in Berlin Neukölln
           </h3>
           
           <div className="grid md:grid-cols-2 gap-8">
@@ -89,7 +89,7 @@ const ImpressumSection = () => {
                 ROLLBERGSTRASSE 73
               </p>
               <p className="font-bold text-foreground text-lg mb-6">
-                12053 BERLIN-NEUKÖLLN
+                12053 BERLIN NEUKÖLLN
               </p>
               
               <div className="border-t border-border pt-6 space-y-4">
