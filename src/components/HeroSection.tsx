@@ -8,7 +8,7 @@ const HeroSection = () => {
         <h1 className="font-display text-4xl md:text-6xl lg:text-8xl text-foreground uppercase leading-tight animate-fade-up">
           Die Kampfsportschule
           <br />
-          <span className="text-accent">in Berlin-Neukölln</span>
+          <span className="text-accent">in Berlin Neukölln</span>
         </h1>
       </div>
     </section>
