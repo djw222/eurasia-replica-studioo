@@ -56,7 +56,7 @@ const TrainingszeitenSection = () => {
           className={`text-center mt-16 ${isVisible ? 'animate-fade-up' : 'opacity-0'}`}
           style={{ animationDelay: '0.4s' }}
         >
-          <p className="text-accent uppercase tracking-wide font-semibold mb-4">
+          <p className="font-display text-accent uppercase tracking-wide mb-4">
             Du willst mitmachen?
           </p>
           <p className="text-foreground max-w-2xl mx-auto">
