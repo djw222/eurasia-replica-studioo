@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { Phone, Mail, MapPin, ChevronRight } from "lucide-react";
+import mapLocation from "@/assets/map-location.png";
 
 const ImpressumSection = () => {
   const sectionRef = useRef<HTMLElement>(null);
@@ -72,14 +73,13 @@ const ImpressumSection = () => {
           </h3>
           
           <div className="grid md:grid-cols-2 gap-8">
-            {/* Map placeholder */}
-            <div className="bg-background/10 border border-background/30 rounded-xl aspect-video flex items-center justify-center">
-              <div className="text-center p-8">
-                <MapPin size={48} className="text-background/50 mx-auto mb-4" />
-                <p className="text-background/70">
-                  Karte wird hier angezeigt
-                </p>
-              </div>
+            {/* Map */}
+            <div className="rounded-xl overflow-hidden aspect-video">
+              <img 
+                src={mapLocation} 
+                alt="Standort Dojo Eurasia - Rollbergstraße 73, 12053 Berlin Neukölln" 
+                className="w-full h-full object-cover"
+              />
             </div>
             
             {/* Address card */}
