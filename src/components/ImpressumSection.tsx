@@ -1,34 +1,23 @@
 import { useEffect, useRef, useState } from "react";
 import { Phone, Mail, MapPin, ChevronRight } from "lucide-react";
 import mapLocation from "@/assets/map-location.png";
-
 const ImpressumSection = () => {
   const sectionRef = useRef<HTMLElement>(null);
   const [isVisible, setIsVisible] = useState(false);
-
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true);
-        }
-      },
-      { threshold: 0.1 }
-    );
-
+    const observer = new IntersectionObserver(([entry]) => {
+      if (entry.isIntersecting) {
+        setIsVisible(true);
+      }
+    }, {
+      threshold: 0.1
+    });
     if (sectionRef.current) {
       observer.observe(sectionRef.current);
     }
-
     return () => observer.disconnect();
   }, []);
-
-  return (
-    <section
-      id="impressum"
-      ref={sectionRef}
-      className="bg-foreground py-20 md:py-32"
-    >
+  return <section id="impressum" ref={sectionRef} className="bg-foreground py-20 md:py-32">
       <div className="container mx-auto px-4">
         {/* Impressum */}
         <div className={`mb-20 ${isVisible ? 'animate-fade-up' : 'opacity-0'}`}>
@@ -58,16 +47,14 @@ const ImpressumSection = () => {
               <p>BELADEBEXXX</p>
             </div>
             
-            <p className="text-sm text-background/70 max-w-3xl">
-              Haftungshinweis: Trotz sorgfältiger inhaltlicher Kontrolle übernehmen wir keine 
-              Haftung für die Inhalte externer Links. Für den Inhalt der verlinkten Seiten 
-              sind ausschließlich deren Betreiber verantwortlich.
-            </p>
+            
           </div>
         </div>
 
         {/* Location */}
-        <div className={`${isVisible ? 'animate-fade-up' : 'opacity-0'}`} style={{ animationDelay: '0.2s' }}>
+        <div className={`${isVisible ? 'animate-fade-up' : 'opacity-0'}`} style={{
+        animationDelay: '0.2s'
+      }}>
           <h3 className="font-display text-3xl md:text-4xl text-background mb-8">
             Unser Standort in Berlin Neukölln
           </h3>
@@ -75,11 +62,7 @@ const ImpressumSection = () => {
           <div className="grid md:grid-cols-2 gap-8">
             {/* Map */}
             <div className="rounded-xl overflow-hidden aspect-video">
-              <img 
-                src={mapLocation} 
-                alt="Standort Dojo Eurasia - Rollbergstraße 73, 12053 Berlin Neukölln" 
-                className="w-full h-full object-cover"
-              />
+              <img src={mapLocation} alt="Standort Dojo Eurasia - Rollbergstraße 73, 12053 Berlin Neukölln" className="w-full h-full object-cover" />
             </div>
             
             {/* Address card */}
@@ -115,12 +98,7 @@ const ImpressumSection = () => {
               </div>
               
               <div className="border-t border-border pt-6 mt-6">
-                <a
-                  href="https://maps.google.com/?q=Rollbergstraße+73,+12053+Berlin"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 text-accent font-medium hover:opacity-80 transition-opacity"
-                >
+                <a href="https://maps.google.com/?q=Rollbergstraße+73,+12053+Berlin" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-accent font-medium hover:opacity-80 transition-opacity">
                   GOOGLE MAPS <ChevronRight size={18} />
                 </a>
               </div>
@@ -129,10 +107,9 @@ const ImpressumSection = () => {
         </div>
 
         {/* Footer info */}
-        <div 
-          className={`mt-20 grid md:grid-cols-3 gap-8 ${isVisible ? 'animate-fade-up' : 'opacity-0'}`}
-          style={{ animationDelay: '0.4s' }}
-        >
+        <div className={`mt-20 grid md:grid-cols-3 gap-8 ${isVisible ? 'animate-fade-up' : 'opacity-0'}`} style={{
+        animationDelay: '0.4s'
+      }}>
           <div>
             <h4 className="text-background uppercase text-sm font-semibold tracking-wide mb-4">
               Öffnungszeiten
@@ -168,33 +145,17 @@ const ImpressumSection = () => {
 
         {/* Floating contact buttons */}
         <div className="fixed right-4 md:right-8 bottom-1/4 flex flex-col gap-3 z-40">
-          <a
-            href="tel:01778460823"
-            className="w-14 h-14 rounded-full bg-accent flex items-center justify-center hover:scale-110 transition-transform shadow-lg"
-            aria-label="Anrufen"
-          >
+          <a href="tel:01778460823" className="w-14 h-14 rounded-full bg-accent flex items-center justify-center hover:scale-110 transition-transform shadow-lg" aria-label="Anrufen">
             <Phone size={24} className="text-accent-foreground" />
           </a>
-          <a
-            href="mailto:info@eurasia.de"
-            className="w-14 h-14 rounded-full bg-accent flex items-center justify-center hover:scale-110 transition-transform shadow-lg"
-            aria-label="E-Mail senden"
-          >
+          <a href="mailto:info@eurasia.de" className="w-14 h-14 rounded-full bg-accent flex items-center justify-center hover:scale-110 transition-transform shadow-lg" aria-label="E-Mail senden">
             <Mail size={24} className="text-accent-foreground" />
           </a>
-          <a
-            href="https://maps.google.com/?q=Rollbergstraße+73,+12053+Berlin"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="w-14 h-14 rounded-full bg-accent flex items-center justify-center hover:scale-110 transition-transform shadow-lg"
-            aria-label="Standort anzeigen"
-          >
+          <a href="https://maps.google.com/?q=Rollbergstraße+73,+12053+Berlin" target="_blank" rel="noopener noreferrer" className="w-14 h-14 rounded-full bg-accent flex items-center justify-center hover:scale-110 transition-transform shadow-lg" aria-label="Standort anzeigen">
             <MapPin size={24} className="text-accent-foreground" />
           </a>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default ImpressumSection;
