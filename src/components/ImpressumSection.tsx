@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { Phone, Mail, MapPin, ChevronRight } from "lucide-react";
+import { Phone, Mail, MapPin, ChevronRight, Instagram } from "lucide-react";
 import mapLocation from "@/assets/map-location.png";
 const ImpressumSection = () => {
   const sectionRef = useRef<HTMLElement>(null);
@@ -153,6 +153,9 @@ const ImpressumSection = () => {
           </a>
           <a href="https://maps.google.com/?q=Rollbergstraße+73,+12053+Berlin" target="_blank" rel="noopener noreferrer" className="w-14 h-14 rounded-full bg-accent flex items-center justify-center hover:scale-110 transition-transform shadow-lg" aria-label="Standort anzeigen">
             <MapPin size={24} className="text-accent-foreground" />
+          </a>
+          <a href="https://www.instagram.com/eurasiasportakademie/" target="_blank" rel="noopener noreferrer" className="w-14 h-14 rounded-full bg-accent flex items-center justify-center hover:scale-110 transition-transform shadow-lg" aria-label="Instagram">
+            <Instagram size={24} className="text-accent-foreground" />
           </a>
         </div>
       </div>
