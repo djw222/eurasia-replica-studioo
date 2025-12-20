@@ -54,7 +54,7 @@ const UeberUnsSection = () => {
           animationDelay: '0.2s'
         }}>
             <div className="bg-card border border-border rounded-2xl p-8 md:p-12">
-              <p className="text-muted-foreground uppercase tracking-wide text-sm mb-4">
+              <p className="font-display text-muted-foreground uppercase tracking-wide text-sm mb-4">
                 Wir stehen für
               </p>
               <div className="space-y-2">
