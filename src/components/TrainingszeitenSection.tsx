@@ -79,13 +79,13 @@ const TrainingszeitenSection = () => {
 
         {/* Weekly Schedule Grid */}
         <div 
-          className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-7 gap-4 ${isVisible ? 'animate-fade-up' : 'opacity-0'}`}
+          className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-7 gap-3 ${isVisible ? 'animate-fade-up' : 'opacity-0'}`}
           style={{ animationDelay: '0.2s' }}
         >
           {days.map((day, index) => (
             <div 
               key={day} 
-              className="bg-card border border-border rounded-xl p-4 md:p-5"
+              className="bg-card border border-border rounded-xl p-4 md:p-5 min-w-0"
               style={{ animationDelay: `${0.1 * index}s` }}
             >
               <h3 className="font-display text-accent text-lg md:text-xl uppercase mb-4 text-center border-b border-border pb-3">
@@ -95,10 +95,10 @@ const TrainingszeitenSection = () => {
                 {schedule[day].map((slot, slotIndex) => (
                   <div 
                     key={slotIndex} 
-                    className={`${slot.note ? 'text-center' : ''}`}
+                    className={`${slot.note ? 'text-center py-2' : ''}`}
                   >
                     {slot.note ? (
-                      <p className="text-muted-foreground text-xs italic">
+                      <p className="text-muted-foreground text-xs uppercase tracking-wide">
                         {slot.activity}
                       </p>
                     ) : (
@@ -106,7 +106,7 @@ const TrainingszeitenSection = () => {
                         <p className="text-accent text-xs font-mono">
                           {slot.time}
                         </p>
-                        <p className="text-foreground text-sm uppercase tracking-wide">
+                        <p className="text-foreground text-xs uppercase tracking-wide leading-tight">
                           {slot.activity}
                         </p>
                       </>
