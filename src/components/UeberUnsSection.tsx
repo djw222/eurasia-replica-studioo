@@ -76,28 +76,7 @@ const UeberUnsSection = () => {
         <div className={`mt-20 ${isVisible ? 'animate-fade-up' : 'opacity-0'}`} style={{
         animationDelay: '0.4s'
       }}>
-          <div className="bg-card border border-border rounded-2xl p-8 md:p-12">
-            <h3 className="font-display text-2xl md:text-3xl text-foreground mb-6 uppercase">
-              Mitgliedschaft & Preise
-            </h3>
-            <div className="grid md:grid-cols-3 gap-8">
-              <div className="text-center p-6">
-                <p className="text-muted-foreground uppercase text-sm mb-2">Kinder</p>
-                <p className="font-display text-3xl text-accent">35€</p>
-                <p className="text-muted-foreground text-sm">pro Monat</p>
-              </div>
-              <div className="text-center p-6 border-y md:border-y-0 md:border-x border-border">
-                <p className="text-muted-foreground uppercase text-sm mb-2">Jugendliche</p>
-                <p className="font-display text-3xl text-accent">40€</p>
-                <p className="text-muted-foreground text-sm">pro Monat</p>
-              </div>
-              <div className="text-center p-6">
-                <p className="text-muted-foreground uppercase text-sm mb-2">Erwachsene</p>
-                <p className="font-display text-3xl text-accent">50€</p>
-                <p className="text-muted-foreground text-sm">pro Monat</p>
-              </div>
-            </div>
-          </div>
+          
         </div>
       </div>
     </section>;
