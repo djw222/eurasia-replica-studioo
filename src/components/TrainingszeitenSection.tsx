@@ -126,7 +126,7 @@ const TrainingszeitenSection = () => {
           <p className="font-display text-accent uppercase tracking-wide mb-4">
             Du willst mitmachen?
           </p>
-          <p className="text-foreground max-w-2xl mx-auto">
+          <p className="text-foreground max-w-2xl mx-auto font-medium">
             Wir bieten ein kostenloses Probetraining für jede von uns angebotene Sportart an. 
             Du musst dich nicht anmelden, sondern kannst einfach zu einer unserer Trainingszeiten vorbeikommen.
           </p>
