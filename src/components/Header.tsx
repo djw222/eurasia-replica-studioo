@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+
 const navItems = [{
   label: "Über uns",
   href: "#ueber-uns"
@@ -35,9 +36,11 @@ const Header = () => {
           {/* Logo - center */}
           <button onClick={() => handleNavClick("#hero")} className="flex flex-col items-center">
             <span className="font-display text-3xl md:text-4xl text-foreground tracking-wide">
-              EURASIA SPORTAKADEMIE   
+              EURASIA
             </span>
-            
+            <span className="text-foreground text-xs md:text-sm tracking-[0.2em] uppercase mt-1">
+              Sportakademie e.V.
+            </span>
           </button>
 
           {/* Right nav items - desktop */}
