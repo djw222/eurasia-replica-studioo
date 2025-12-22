@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
-import eurasiaLogo from "@/assets/eurasia-logo.png";
+
 const navItems = [{
   label: "Über uns",
   href: "#ueber-uns"
@@ -35,7 +35,9 @@ const Header = () => {
 
           {/* Logo - center */}
           <button onClick={() => handleNavClick("#hero")} className="flex flex-col items-center">
-            <img src={eurasiaLogo} alt="Eurasia" className="h-16 md:h-20 object-contain" />
+            <span className="font-display text-2xl md:text-3xl text-foreground italic tracking-wide">
+              EURASIA
+            </span>
             <span className="text-foreground text-[10px] md:text-xs tracking-[0.2em] uppercase mt-1">
               Sportakademie e.V.
             </span>
