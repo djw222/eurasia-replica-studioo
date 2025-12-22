@@ -31,6 +31,10 @@ const ImpressumSection = () => {
             </p>
             
             <p>
+              Döndü Tahtaci <span className="text-background/70">(Inhaberin)</span>
+            </p>
+            
+            <p>
               Rollbergstraße 73<br />
               12053 Berlin Neukölln
             </p>
