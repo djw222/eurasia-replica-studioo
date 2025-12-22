@@ -31,7 +31,7 @@ const ImpressumSection = () => {
             </p>
             
             <p>
-              Döndü Tahtaci <span className="text-background/70">(Inhaberin)</span>
+              Döndü Tahtaci <span className="text-background/70">​( Schatzmeisterin) </span>
             </p>
             
             <p>
