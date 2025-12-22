@@ -38,7 +38,7 @@ const Header = () => {
             <span className="font-display text-3xl md:text-4xl text-foreground tracking-wide">
               EURASIA
             </span>
-            <span className="text-foreground text-[10px] md:text-xs tracking-[0.2em] uppercase mt-1">
+            <span className="text-foreground text-xs md:text-sm tracking-[0.2em] uppercase mt-1">
               Sportakademie e.V.
             </span>
           </button>
