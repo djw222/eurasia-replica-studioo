@@ -106,7 +106,7 @@ const TrainingszeitenSection = () => {
                         <p className="text-accent text-xs font-mono">
                           {slot.time}
                         </p>
-                        <p className="text-foreground text-xs uppercase tracking-wide leading-tight">
+                        <p className="text-foreground text-xs leading-tight">
                           {slot.activity}
                         </p>
                       </>
