@@ -51,6 +51,14 @@ const ImpressumSection = () => {
               <p>BELADEBEXXX</p>
             </div>
             
+            <a 
+              href="https://www.paypal.com/pools/c/9l7CGFETaT" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="inline-block mt-6 px-8 py-3 bg-red-600 hover:bg-red-700 text-white font-bold rounded-lg transition-colors uppercase tracking-wide"
+            >
+              Donate
+            </a>
             
           </div>
         </div>
