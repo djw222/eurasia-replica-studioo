@@ -1,5 +1,46 @@
 import { useEffect, useRef, useState } from "react";
 
+const schedule = {
+  Montag: [
+    { time: "16:30 - 17:45", activity: "TKD BIS 10" },
+    { time: "17:45 - 19:00", activity: "TKD AB 10" },
+    { time: "19:00 - 20:00", activity: "BOXEN JUGENDLICHE" },
+  ],
+  Dienstag: [
+    { time: "16:30 - 17:30", activity: "BOXEN KINDER" },
+    { time: "17:30 - 18:30", activity: "BOXEN JUGENDLICHE" },
+    { time: "18:30 - 19:30", activity: "BJJ ALLE ALTERSKLASSEN" },
+  ],
+  Mittwoch: [
+    { time: "15:30 - 16:30", activity: "SPIELSTUNDE" },
+    { time: "16:30 - 17:30", activity: "JUDO ALLE ALTERSKLASSEN" },
+    { time: "17:30 - 18:30", activity: "KICKBOXEN ALLE ALTERSKLASSEN" },
+    { time: "18:30 - 19:30", activity: "BJJ ALLE ALTERSKLASSEN" },
+  ],
+  Donnerstag: [
+    { time: "12:00 - 13:00", activity: "FITNESS ERWACHSENE" },
+    { time: "16:30 - 17:30", activity: "BOXEN KINDER" },
+    { time: "17:30 - 18:30", activity: "BOXEN JUGENDLICHE" },
+    { time: "18:30 - 19:30", activity: "SPARRING" },
+  ],
+  Freitag: [
+    { time: "15:30 - 16:30", activity: "BASTELN TURNEN MALEN" },
+    { time: "16:30 - 17:45", activity: "TKD BIS 10" },
+    { time: "17:45 - 19:00", activity: "TKD AB 10" },
+  ],
+  Samstag: [
+    { time: "", activity: "PERSONALTRAINING AUF ANFRAGE MÖGLICH", note: true },
+    { time: "10:00 - 11:00", activity: "JUDO" },
+    { time: "11:00 - 12:00", activity: "KICKBOXEN ALLE ALTERSKLASSEN" },
+    { time: "12:00 - 13:00", activity: "KAMPFVORBEREITUNG" },
+  ],
+  Sonntag: [
+    { time: "", activity: "PERSONALTRAINING AUF ANFRAGE MÖGLICH", note: true },
+  ],
+};
+
+const days = ["Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag", "Samstag", "Sonntag"] as const;
+
 const TrainingszeitenSection = () => {
   const sectionRef = useRef<HTMLElement>(null);
   const [isVisible, setIsVisible] = useState(false);
@@ -36,19 +77,45 @@ const TrainingszeitenSection = () => {
           </h2>
         </div>
 
-        {/* Placeholder for schedule */}
+        {/* Weekly Schedule Grid */}
         <div 
-          className={`bg-card border border-border rounded-2xl p-8 md:p-12 min-h-[400px] flex items-center justify-center ${isVisible ? 'animate-fade-up' : 'opacity-0'}`}
+          className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-7 gap-4 ${isVisible ? 'animate-fade-up' : 'opacity-0'}`}
           style={{ animationDelay: '0.2s' }}
         >
-          <div className="text-center">
-            <p className="text-foreground text-lg uppercase tracking-wide mb-4">
-              Trainingsplan kommt bald
-            </p>
-            <p className="text-muted-foreground max-w-md">
-              Hier wird der vollständige Trainingsplan mit allen Zeiten und Sportarten angezeigt.
-            </p>
-          </div>
+          {days.map((day, index) => (
+            <div 
+              key={day} 
+              className="bg-card border border-border rounded-xl p-4 md:p-5"
+              style={{ animationDelay: `${0.1 * index}s` }}
+            >
+              <h3 className="font-display text-accent text-lg md:text-xl uppercase mb-4 text-center border-b border-border pb-3">
+                {day}
+              </h3>
+              <div className="space-y-3">
+                {schedule[day].map((slot, slotIndex) => (
+                  <div 
+                    key={slotIndex} 
+                    className={`${slot.note ? 'text-center' : ''}`}
+                  >
+                    {slot.note ? (
+                      <p className="text-muted-foreground text-xs italic">
+                        {slot.activity}
+                      </p>
+                    ) : (
+                      <>
+                        <p className="text-accent text-xs font-mono">
+                          {slot.time}
+                        </p>
+                        <p className="text-foreground text-sm uppercase tracking-wide">
+                          {slot.activity}
+                        </p>
+                      </>
+                    )}
+                  </div>
+                ))}
+              </div>
+            </div>
+          ))}
         </div>
 
         {/* CTA */}
