@@ -35,7 +35,7 @@ const Header = () => {
 
           {/* Logo - center */}
           <button onClick={() => handleNavClick("#hero")} className="flex flex-col items-center">
-            <span className="font-display text-2xl md:text-3xl text-foreground italic tracking-wide">
+            <span className="font-display text-3xl md:text-4xl text-foreground tracking-wide">
               EURASIA
             </span>
             <span className="text-foreground text-[10px] md:text-xs tracking-[0.2em] uppercase mt-1">
