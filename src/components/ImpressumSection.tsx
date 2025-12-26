@@ -41,7 +41,7 @@ const ImpressumSection = () => {
             
             <div className="space-y-2">
               <p>Telefon : 01778460823</p>
-              <p>E-Mail : info@eurasia.de</p>
+              <p>E-Mail : info@eurasiasportakademie.de</p>
             </div>
             
             <div className="pt-4 border-t border-background/20">
@@ -51,12 +51,7 @@ const ImpressumSection = () => {
               <p>BELADEBEXXX</p>
             </div>
             
-            <a 
-              href="https://www.paypal.com/pools/c/9l7CGFETaT" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="inline-block mt-6 px-8 py-3 bg-red-600 hover:bg-red-700 text-white font-bold rounded-lg transition-colors uppercase tracking-wide"
-            >
+            <a href="https://www.paypal.com/pools/c/9l7CGFETaT" target="_blank" rel="noopener noreferrer" className="inline-block mt-6 px-8 py-3 bg-red-600 hover:bg-red-700 text-white font-bold rounded-lg transition-colors uppercase tracking-wide">
               Donate
             </a>
             
