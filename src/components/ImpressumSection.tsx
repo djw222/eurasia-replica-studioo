@@ -154,11 +154,13 @@ const ImpressumSection = () => {
         <div className="fixed right-4 md:right-8 bottom-1/4 flex flex-col gap-3 z-40">
           {/* Phone button with hover options */}
           <div className="group relative">
+            {/* Invisible expanded hover area */}
+            <div className="absolute -left-20 -top-2 -bottom-2 -right-2 opacity-0 group-hover:opacity-100" />
             <div className="w-14 h-14 rounded-full flex items-center justify-center shadow-lg cursor-pointer hover:scale-110 transition-transform bg-accent">
               <Phone size={24} className="text-white" />
             </div>
             {/* Hover options */}
-            <div className="absolute right-16 top-1/2 -translate-y-1/2 flex gap-2 opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-all duration-300">
+            <div className="absolute right-14 top-1/2 -translate-y-1/2 flex gap-2 pr-2 opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-all duration-300">
               <a href="tel:+4917784608823" className="w-12 h-12 rounded-full bg-accent flex items-center justify-center hover:scale-110 transition-transform shadow-lg" aria-label="Anrufen" title="Anrufen">
                 <Phone size={20} className="text-accent-foreground" />
               </a>
